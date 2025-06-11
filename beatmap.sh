@@ -83,7 +83,7 @@ for LOCAL_PATH in $PATH_LIST; do
             mkdir -p "$LOCAL_PATH"
         fi
         # 执行 rsync 下载
-        rsync -avr "$VPS_USER@$VPS_IP:$REMOTE_PATH" "$LOCAL_PATH/"
+        rsync -avr "$VPS_USER@$VPS_IP:$REMOTE_PATH/*" "$LOCAL_PATH/"
 
     else
         echo "未知操作: $ACTION"
