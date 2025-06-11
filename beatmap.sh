@@ -28,7 +28,6 @@ case "$PKG" in
             echo "$PKG 不支持平台: $PLATFORM"
         fi
         PATH_LIST="
-        /sdcard/Android/data/$PKG
         /data/data/$PKG
         "
         ;;
@@ -37,9 +36,7 @@ case "$PKG" in
             echo "$PKG 不支持平台: $PLATFORM"
         fi
         PATH_LIST="
-        /sdcard/Cytoid
         /sdcard/Android/data/$PKG
-        /data/data/$PKG
         "
         ;;
     ru.nsu.ccfit.zuev.osuplus)
