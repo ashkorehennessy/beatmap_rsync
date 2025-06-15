@@ -48,6 +48,15 @@ case "$PKG" in
         /sdcard/osu!droid
         "
         ;;
+    com.rayark.cytus2)
+        if [ "$PLATFORM" = "linux" ]; then
+            echo "$PKG 不支持平台: $PLATFORM"
+        fi
+        PATH_LIST="
+        /data/data/$PKG
+        /sdcard/Android/data/$PKG
+        "
+        ;;
     osu)
         if [ "$PLATFORM" = "android" ]; then
             echo "$PKG 不支持平台: $PLATFORM"
