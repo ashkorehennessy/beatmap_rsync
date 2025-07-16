@@ -57,6 +57,14 @@ case "$PKG" in
         /sdcard/Android/data/$PKG
         "
         ;;
+    moe.low.arc)
+        if [ "$PLATFORM" = "linux" ]; then
+            echo "$PKG 不支持平台: $PLATFORM"
+        fi
+        PATH_LIST="
+        /data/data/$PKG
+        "
+        ;;     
     osu)
         if [ "$PLATFORM" = "android" ]; then
             echo "$PKG 不支持平台: $PLATFORM"
